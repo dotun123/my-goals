@@ -28,7 +28,7 @@ h1 {
 .profile-picture img {
     max-width: 100%; /* Ensure image does not exceed its container */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
+    
 }
 
 p {
@@ -45,14 +45,14 @@ p {
     font-size: 1.875rem;
     color: gray;
     padding-top: 0.25rem; /* Adjust padding top */
-    padding-bottom: 0.25rem; 
+   
 }
 
 .goals-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 20px; /* Adjust margin-top for spacing */
+    
     padding: 10px; /* Add padding for spacing */
 }
 
@@ -90,11 +90,15 @@ footer {
 
 footer a {
     margin: 0 10px;
+    
+}
+
+a{
     text-decoration: none;
     color: grey;
 }
 
-footer a:hover {
+ a:hover {
     text-decoration: underline;
 }
 
@@ -110,4 +114,11 @@ footer a:hover {
     .goals-container {
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
     }
+
+    .goals-heading {
+        align-self: center; /* Align to the left */
+        font-size: 1.575rem;
+       
+    }
+    
 }
