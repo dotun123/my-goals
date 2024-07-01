@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure body covers the full viewport */
+    background-color:rgb(17 24 39);
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px; /* Adjust margin-top for spacing */
+}
+.displayName{
+    color:rgb(13 148 136);
+}
+
+.profile-picture {
+    margin-top: 20px; /* Adjust margin-top for spacing */
+   
+}
+
+.profile-picture img {
+    max-width: 100%; /* Ensure image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px; /* Adjust margin-top for spacing */
+    color: white;
+}
+
+
+
+.goals-heading {
+    align-self: flex-start; /* Align to the left */
+    margin-left: 20px; /* Add some margin from the left edge */
+    font-size: 1.875rem;
+    color: gray;
+    padding-top: 0.25rem; /* Adjust padding top */
+    padding-bottom: 0.25rem; 
+}
+
+.goals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px; /* Adjust margin-top for spacing */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.goal-box {
+    background-color: rgb(17 24 39);
+    border: 1px solid rgb(17 24 39);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 5px  rgba(13, 148, 136, 0.5);
+    text-align: center;
+    color: gray; 
+}
+
+.goal-box > ul {
+    text-align: left;
+    padding-left: 20px; 
+    color: white;
+}
+
+.goal-box > ul > li {
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    margin-top: 5px; /* Add spacing between list items */
+}
+
+.goal-box > div {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add margin below the header */
+    font-size: 1.2em; /* Increase the font size */
+}
+
+footer {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: grey;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .profile-picture {
+        max-width: 150px; /* Adjust maximum width for smaller screens */
+    }
+
+    .goals-container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+}
